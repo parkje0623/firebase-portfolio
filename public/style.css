@@ -1,0 +1,264 @@
+:root {
+    --text-color: #000000;
+    --background-color: #FFFFFF;
+    --icon-color: #FF7F50;
+}
+
+html { /* HTML smooth scroll when navbar_menu clicked */
+    scroll-behavior: smooth;
+}
+
+body { /* Setup for entire body */
+    margin: 0;
+    font-family: "Piazzolla";
+}
+
+h1 { /* Title of each section */
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a { /* navbar_menu (about, exp, ...) */
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section { /* Size of each section */
+    height: auto;
+    width: 95vw;
+    display: flex;
+}
+
+img { /* Size of each image */
+    max-width: 500px;
+    height: 350px;
+    max-height: 350px;
+    filter: brightness(90%);
+}
+
+/* Rainbow effect on Name */
+@keyframes rainbowName {
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; }
+    100% { color: #e82aff; }
+}
+
+/* Top Bar Settings */
+#top-nav-bar {
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--background-color);
+    padding: 40px 80px;
+    z-index: 1;
+}
+
+/* Name and Logo */
+#top-nav-bar-name { 
+    font-size: 42px;
+    font-weight: lighter;
+    color: var(--text-color);
+}
+
+/* Apply Rainbow effect created above when hovering the name */
+#top-nav-bar-name .name:hover {
+    animation-duration: 4s;
+    animation-name: rainbowName;
+    animation-iteration-count: infinite;
+}
+
+/* Color Logo */
+#top-nav-bar-name i { 
+    color: var(--icon-color);
+}
+
+/* Top bat Menu Settings (about, exp, port, contact) */
+#top-nav-bar-menu {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Paddings to each list in the top bar menu */
+#top-nav-bar-menu li { 
+    padding: 8px 28px;
+}
+
+.top-nav-bar-menu li:hover { /* menu item hover effect */
+    background-color: var(--icon-color);
+    border-radius: 4px;
+}
+
+/* Initialize Menu Button opacity */
+#about-btn {
+    opacity: 1;
+}
+#port-btn, #contact-btn {
+    opacity: 0.5;
+}
+
+#top-nav-bar-menu li { /* Setup for each menu item */
+    padding: 8px 28px;
+}
+
+#top-nav-bar-menu li:hover { /* menu item hover effect */
+    background-color: var(--icon-color);
+    border-radius: 4px;
+}
+  
+#nav-bar-menu-icon { /* Hamburger icon */
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    font-size: 24px;
+    color: var(--icon-color);
+}
+
+@media screen and (max-width: 800px) { /* When Scrren reduced in width size */
+    #top-nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    
+    #top-nav-bar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #top-nav-bar-menu.active {
+        display: flex;
+    }
+
+    #top-nav-bar-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-bar-menu-icon {
+        display: block;
+    }
+}
+
+#profile-pic { /* Picture in About section */
+    float: left;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    padding: 40px;
+    /* May extend up to 80~100 depends on how much things I have to write */
+}
+  
+#about-paragraph, #portfolio-paragraph, #contact-paragraph { /* Each section's font and positions */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-top: 150px;
+    padding-left: 10px;
+    z-index: 0;
+}
+  
+#contact-paragraph {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+  
+#github { /* Bolding github links */
+    text-decoration: underline;
+    font-weight: bold;
+}
+  
+#hobby-list { /* List of hobbies in About section */
+    margin-top: 0;
+    float: left;
+}
+
+#portfolio-title, #contact-section {
+    text-align: center;
+    padding-top: 100px;
+}
+  
+.images {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.images .ZombieSurvival, .backpack, .CrossTheRoad, .maze, .portfolio, .chat {
+    display: inline-block;
+}
+
+.ZombieSurvival, .backpack, .CrossTheRoad, .maze, .portfolio, .chat {
+    margin: 10px;
+    position: relative;
+    width: auto;
+    z-index: auto;
+}
+  
+/* Image hovers, all images here */
+.ZombieSurvival:hover .overlay,
+.backpack:hover .overlay,
+.portfolio:hover .overlay,
+.CrossTheRoad:hover .overlay,
+.chat:hover .overlay,
+.maze:hover .overlay {
+    width: 100%;
+    animation: fadein 1s linear 1 normal forwards;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1s ease;
+}
+  
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+.text {
+    word-break: break-word;
+    width: 95%;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+/* color and underline all the links */
+.text a, #contact-section a {
+    text-decoration: underline;
+    color: blue;
+}
+  
+/* Scroll Trigger */
+.visible, .invisible {
+    opacity: 0.0;
+    transition: opacity 2s ease;
+}
+
+.visible {
+    opacity: 1.0;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <title>Portfolio - Jieung Park</title>
+        <!-- Kit code for icons -->
+        <script src="https://kit.fontawesome.com/330d76a669.js" crossorigin="anonymous"></script>
+        <script src="./ScrollTrigger.min.js"></script>
+        <script src="./script.js" defer> </script>
+    </head>
+
+    <body>
+        <div id="portfolio-page">
+            <div id="top-nav-div">
+                <nav id="top-nav-bar" class="navbar">
+                    <div id="top-nav-bar-name">
+                        <i class="fas fa-code-branch"></i>
+                        <a class="name" href="#">Jieung Park</a>
+                    </div>
+                    
+                    <div id="top-nav-bar-menu">
+                        <li id="about-btn"><a href="#about-section-div" onclick="clickAbout();">About</a></li>
+                        <li id="port-btn"><a href="#portfolio-section-div" onclick="clickPort();">Portfolio</a></li>
+                        <li id="contact-btn"><a href="#contact-section-div" onclick="clickContact();">Contact</a></li>
+                    </div>
+
+                    <div id="top-nav-bar-dropdown">
+                        <a href="javascript:void()" id="nav-bar-menu-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="about-section-div">
+                <section id="about-section">
+                    <div id="about-paragraph">
+                        <img id="profile-pic" src="TestProfile.jpg" alt="profile" data-trigger/>
+                        <h1 data-trigger>ABOUT</h1>
+                        <p data-trigger>
+                            My name is Jieung Park and I am a graduate student from Simon Fraser University. <br>
+                            Simon Fraser University, Burnaby, BC <br>
+                            Student, Computing Science (September 2017 - December 2023) <br>
+                            Co-op work term at Inno Foods Inc. (Jan 2022 - Dec 2022) <br>
+                            Part-time work at Inno Foods Inc. (Jan 2023 - Aug 2023) <br>
+                            As a Computing Science student, I have completed a comprehensive four-year course of study and one year of co-op term focused on laying groundwork for both back-end and front-end development.
+                            My primary coding languages are C (or C#) for self-studying desktop/web game development using Unity, and Python for other development projects.
+                            Additionally, during the co-op term I have gained practical experience in developing and maintaining an ERP system named "Odoo" using Python,
+                            and I have independently studied front-web development using HTML/CSS/JavaScript with Node.js to build full-stack websites and applications.
+                            Throughout my coursework, co-op experience, and self-directed learning, I have acquired a diverse set of skills in programming languages including
+                            C, C#, Java, Python, HTML/CSS/JavaScript with Node.js and PostgreSQL for database management system. <br><br>
+                            These are some of my interests and hobbies:
+                        </p>
+                        <ul id="hobby-list" data-trigger>
+                            <li id="github"><a href="https://github.com/parkje0623">Creating Applications and Websites (github)</a></li>
+                            <li>Listening to music (Korean ballad Songs)</li>
+                            <li>Playing and Watching Video games</li>
+                            <li>Watching EPL soccer league & Marvel Movies</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div id="portfolio-section-div">
+                <h1 id="portfolio-title" data-trigger>PORTFOLIO</h1>
+                <section id="portfolio-section">
+                    <div class="images">
+                        <div class="ZombieSurvival" data-trigger>
+                            <img id="zombie-pic" src="ZombieSurvival.jpg" alt="ZombieGame"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    ZombieSurvival Game <br><br>
+                                    ZombieSurvival is a first-person shooting zombie game.
+                                    The objective of the game is to survive and kill randomly spawning zombies for 400 seconds.
+                                    Published on itch.io (open marketplace for developers) as downloadable free game. <br><br>
+                                    Downdload and play the game <a href="https://jieung.itch.io/zombiesurvival">here</a> <br>
+                                    <a href="https://github.com/parkje0623/ZombieGame">source code</a><br>
+                                    Language: C# <br>
+                                    Devlopment Tool: Unity
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="backpack" data-trigger>
+                            <img id="sfu-pic" src="SFU-Backpack.jpg" alt="SFU-backpack"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    SFU-Backpack <br><br>
+                                    SFU-Backpack is a marketplace website for Simon Fraser University students to sell/buy textbooks or school supplies.
+                                    The idea of the project was to replace an unorganized SFU sell/buy Facebook page with our website which provides more
+                                    convenient and organized marketplace for SFU students to use freely. Currently, yet to be released to the students. <br><br>
+                                    <!-- View SFU-Backpack Website <a href="https://sfubackpack.herokuapp.com/mainpage">here</a><br> -->
+                                    <a href="https://github.com/parkje0623/SFU-Backpack">source code</a><br>
+                                    Host Server: Heroku <br>
+                                    Languages: HTML, CSS, JavaScript <br>
+                                    Technologies: Node.js, PostgreSQL, AWS (Storage), Google Map APIs
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio" data-trigger>
+                            <img id="portfolio-pic" src="Portfolio.jpg" alt="Portfolio"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    Portfolio Website <br><br>
+                                    Portfolio website designed to introduce myself and display personal or group projects.
+                                    Website is created using HTML/CSS/JavaScript and deployed through Firebase. <br><br>
+                                    View Portfolio website <a href="https://jieung-portfolio.web.app">here</a><br>
+                                    <a href="https://github.com/parkje0623/Portfolio">source code</a><br>
+                                    Host Server: Firebase <br>
+                                    Languages: HTML, CSS, JavaScript
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="CrossTheRoad" data-trigger>
+                            <img id="game-pic" src="CrossTheRoad.jpg" alt="CrossTheRoadGame"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    CrossTheRoad Game <br><br>
+                                    CrossTheRoad is a game inspired by an Android game named "Crossy Road".
+                                    The objective of the game is to cross an endless roads while avoding obstacles without dying.
+                                    The game is created mainly for familiarizing myself with C# and Unity. <br><br>
+                                    Play the game <a href="https://jieung.itch.io/crosstheseroads">here</a><br>
+                                    <a href="https://github.com/parkje0623/CrossTheRoad">source code</a><br>
+                                    Language: C# <br>
+                                    Devlopment Tool: Unity
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="chat" data-trigger>
+                            <img id="chat-pic" src="SimpleTalk.jpg" alt="SimpleChat"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    Simple Chat Application <br><br>
+                                    Simple Chat is a terminal-based chat application using kernel-level multiple threads implementation for LINUX.
+                                    Entering the terminal application provides instant messaging facility between two connected terminals.
+                                    Two terminals are connected by entering each machine names and port-numbers. <br><br>
+                                    No demo available <br>
+                                    <a href="https://github.com/parkje0623/SimpleChat">source code</a><br>
+                                    Language: C
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="maze" data-trigger>
+                            <img id="maze-pic" src="MazeGame.jpg" alt="MazeGame"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    Maze Game <br><br>
+                                    Maze game is a RESTful API application that uses HTTP requests to send and receive data between clients and internal systems.
+                                    Players must collect cookies while staying away from randomly moving cats. <br><br>
+                                    No demo available (only playable using localhost) <br>
+                                    RESTful API <a href="https://github.com/parkje0623/MazeGameRESTAPI">source code</a><br>
+                                    Terminal version (no RESTful API): <a href="https://github.com/parkje0623/JavaMazeGame">source code</a><br>
+                                    Language: Java
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="contact-section-div">
+                <section id="contact-section">
+                    <div id="contact-paragraph">
+                        <h1 data-trigger>CONTACT</h1>
+                        Email: parkje0623@gmail.com <br>
+                        Phone: 778-317-5982 <br>
+                        Resume: <a href="Resume.pdf">Open a pdf file</a><br>
+                        LinkedIn: <a href="https://www.linkedin.com/in/jieung-park/"> https://www.linkedin.com/in/jieung-park/</a><br>
+                        Github: <a href="https://github.com/parkje0623">https://github.com/parkje0623</a><br><br>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
