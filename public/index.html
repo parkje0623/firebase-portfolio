@@ -39,7 +39,7 @@
             <div id="about-section-div">
                 <section id="about-section">
                     <div id="about-paragraph">
-                        <img id="profile-pic" src="TestProfile.jpg" alt="profile" data-trigger/>
+                        <img id="profile-pic" src="self-photo.jfif" alt="profile" data-trigger/>
                         <h1 data-trigger>ABOUT</h1>
                         <p data-trigger>
                             My name is Jieung Park and I am a graduate student from Simon Fraser University. <br>
@@ -69,6 +69,37 @@
                 <h1 id="portfolio-title" data-trigger>PORTFOLIO</h1>
                 <section id="portfolio-section">
                     <div class="images">
+                        <div class="chat" data-trigger>
+                            <img id="chat-pic" src="frenzyquiz.png" alt="Frenzy Quiz"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    Frenzy Quiz (Quiz Platform) <br><br>
+                                    Frenzy Quiz is a real-time interactive quiz platform enabling all users to formulate and manage various question formats. 
+                                    All registered users may create and host a quiz and other users can engage with these quizzes by scanning QR codes or entering a quiz ID and completing the questions.
+                                    The hosted quiz provides immediate feedback of the scores to both users and a host after the completion of each question and a final leaderboard after completion of the quiz. <br><br>
+                                    <a href="https://github.com/parkje0623/FrenzyQuiz">source code</a><br>
+                                    Language: React JS
+                                    Host server: GCP Cloud Service
+                                    Technologies: Node.js, PostgreSQL, Firebase Authentication
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio" data-trigger>
+                            <img id="portfolio-pic" src="pattern_matrix.png" alt="Pattern Matrix"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    Pattern Matrix (Memorization Game) <br><br>
+                                    Pattern Matrix is a simple memorization game utilizing the BeagleBone, Zen Cape, and 4x4 Matrix Keypad to show embedded systems programming and hardware integration. 
+                                    The player will use the joystick on a BeagleBone to interact and change the general settings of the game. 
+                                    The 4x4 Matrix Keypad is used to display a random sequence of flashing lights that the player must memorize and re-enter the sequence to win a game. <br><br>
+                                    <a href="https://github.com/parkje0623/Pattern-Matrix">source code</a><br>
+                                    Languages: C <br>
+                                    Hardware: BeagleBone, Zen Cape, and 4x4 Matrix Keypad
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="ZombieSurvival" data-trigger>
                             <img id="zombie-pic" src="ZombieSurvival.jpg" alt="ZombieGame"/>
                             <div class="overlay">
@@ -102,21 +133,6 @@
                             </div>
                         </div>
 
-                        <div class="portfolio" data-trigger>
-                            <img id="portfolio-pic" src="Portfolio.jpg" alt="Portfolio"/>
-                            <div class="overlay">
-                                <div class="text">
-                                    Portfolio Website <br><br>
-                                    Portfolio website designed to introduce myself and display personal or group projects.
-                                    Website is created using HTML/CSS/JavaScript and deployed through Firebase hosting service. <br><br>
-                                    View Portfolio website <a href="https://jieung-portfolio.web.app">here</a><br>
-                                    <a href="https://github.com/parkje0623/firebase-portfolio">source code</a><br>
-                                    Host Server: Firebase <br>
-                                    Languages: HTML, CSS, JavaScript
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="CrossTheRoad" data-trigger>
                             <img id="game-pic" src="CrossTheRoad.jpg" alt="CrossTheRoadGame"/>
                             <div class="overlay">
@@ -129,21 +145,6 @@
                                     <a href="https://github.com/parkje0623/CrossTheRoad">source code</a><br>
                                     Language: C# <br>
                                     Devlopment Tool: Unity
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="chat" data-trigger>
-                            <img id="chat-pic" src="SimpleTalk.jpg" alt="SimpleChat"/>
-                            <div class="overlay">
-                                <div class="text">
-                                    Simple Chat Application <br><br>
-                                    Simple Chat is a terminal-based chat application using kernel-level multiple threads implementation for LINUX.
-                                    Entering the terminal application provides instant messaging facility between two connected terminals.
-                                    Two terminals are connected by entering each machine names and port-numbers. <br><br>
-                                    No demo available <br>
-                                    <a href="https://github.com/parkje0623/SimpleChat">source code</a><br>
-                                    Language: C
                                 </div>
                             </div>
                         </div>
@@ -171,8 +172,8 @@
                     <div id="contact-paragraph">
                         <h1 data-trigger>CONTACT</h1>
                         Email: parkje0623@gmail.com <br>
-                        Phone: 778-317-5982 <br>
-                        Resume: <a href="Resume.pdf">Open a pdf file</a><br>
+                        Phone: +1 (778) 317-5982 <br>
+                        Resume: <a href="Resume_Final.pdf">Open a pdf file</a><br>
                         LinkedIn: <a href="https://www.linkedin.com/in/jieung-park/"> https://www.linkedin.com/in/jieung-park/</a><br>
                         Github: <a href="https://github.com/parkje0623">https://github.com/parkje0623</a><br><br>
                     </div>
@@ -181,3 +182,33 @@
         </div>
     </body>
 </html>
+
+<!-- <div class="chat" data-trigger>
+    <img id="chat-pic" src="SimpleTalk.jpg" alt="SimpleChat"/>
+    <div class="overlay">
+        <div class="text">
+            Simple Chat Application <br><br>
+            Simple Chat is a terminal-based chat application using kernel-level multiple threads implementation for LINUX.
+            Entering the terminal application provides instant messaging facility between two connected terminals.
+            Two terminals are connected by entering each machine names and port-numbers. <br><br>
+            No demo available <br>
+            <a href="https://github.com/parkje0623/SimpleChat">source code</a><br>
+            Language: C
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="portfolio" data-trigger>
+    <img id="portfolio-pic" src="Portfolio.jpg" alt="Portfolio"/>
+    <div class="overlay">
+        <div class="text">
+            Portfolio Website <br><br>
+            Portfolio website designed to introduce myself and display personal or group projects.
+            Website is created using HTML/CSS/JavaScript and deployed through Firebase hosting service. <br><br>
+            View Portfolio website <a href="https://jieung-portfolio.web.app">here</a><br>
+            <a href="https://github.com/parkje0623/firebase-portfolio">source code</a><br>
+            Host Server: Firebase <br>
+            Languages: HTML, CSS, JavaScript
+        </div>
+    </div>
+</div> -->
